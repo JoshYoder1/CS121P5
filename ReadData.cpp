@@ -9,7 +9,8 @@ int main(){
 	std::stringstream converter;
 	std::stringstream ss;
 	std::string ssCounter;
-	std::string item
+	std::string item;
+	int counter;
 
 	file.open("data.csv");
 	while (getline(file, line)){
@@ -19,7 +20,7 @@ int main(){
 		ss.clear();
 		ss.str("");
 		converter.clear();
-		converter("");
+		converter.str("");
 
 		ss.str(line);
 		getline(ss, ssCounter, ",");
@@ -30,7 +31,7 @@ int main(){
 		converter >> counter;
 
 		//print
-		std::cout << line << item << std::endl;
+		std::cout << item << std::endl;
 
 	}// end while
 	file.close();
