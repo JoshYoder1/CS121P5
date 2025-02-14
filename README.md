@@ -1,4 +1,10 @@
 # CS121P5
+Project5.cpp is a working prototype that simply prints the file
+
+Project5Update.cpp is early version of the assignment.
+Line 29 was giving issues and I couldn't figure out why. 
+
+
 include sstream
 include iostream
 include fstream
